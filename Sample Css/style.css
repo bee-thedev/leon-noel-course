@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer{
+    height: 100px;
+    color: white;
+    background-color: black;
+    border: 1px solid red;
+    clear: both; /* Will care about the float and leave some space for float to come back down and won't merge with the header*/
+}
+
+section{
+    height: 400px;
+    width: 33.3333%;
+    border: 2px solid black;
+}
+
+#section1{
+    float: left;
+    background-color: blueviolet;
+    
+}
+
+#section2{
+    float: left;
+    background-color: rgb(236, 255, 127);
+    
+}
+
+#section3{
+    float: left;
+    background-color: brown;
+    
+}
