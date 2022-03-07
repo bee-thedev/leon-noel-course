@@ -12,24 +12,16 @@ header, footer{
 
 section{
     height: 400px;
-    width: 33.3333%;
     border: 2px solid black;
+    float: left;
 }
 
-#section1{
-    float: left;
-    background-color: blueviolet;
-    
+#section1, #section3{
+    width: 20%;
+    background-color: rgb(209, 190, 15);
 }
 
 #section2{
-    float: left;
-    background-color: rgb(236, 255, 127);
-    
-}
-
-#section3{
-    float: left;
-    background-color: brown;
-    
+    width: 60%;
+    background-color: rgb(23, 192, 204);
 }
