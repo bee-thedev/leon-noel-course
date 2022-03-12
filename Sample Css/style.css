@@ -16,12 +16,12 @@ section{
     float: left;
 }
 
-#section1, #section3{
-    width: 20%;
+#section1, #section3,#section4{
+    width:15%;
     background-color: rgb(209, 190, 15);
 }
 
 #section2{
-    width: 60%;
+    width: 55%;
     background-color: rgb(23, 192, 204);
 }
