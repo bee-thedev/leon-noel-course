@@ -210,12 +210,103 @@ section >section > img{
 }
 
 
-footer{
-    width: 100%;
-    background-color: rgb(95, 92, 92) ;
-    height: 600px;
+footer#footer{
+   float: left;
+   width: 100%;
+   background-color:  rgb(95, 92, 92);
+   height: 250px;
 }
 
+footer>section:nth-child(1)>ul{
+    float: left;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+footer>section:nth-child(1)>ul>li{
+    float: left;
+    width: 8%;
+    list-style: none;
+}
+
+i{
+    font-size: 2rem;
+    padding: 10px;
+    background-color: white;
+    color: rgb(95, 92, 92);;
+    border-radius: 2px;
+}
+
+.fa-github-alt:hover{
+    color: black;
+}
+
+.fa-twitter:hover{
+    color: rgb(22, 171, 221);
+}
+
+.fa-facebook:hover{
+    color: blue;
+}
+
+footer>section:nth-child(1)>ul + ul {
+    float: left;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: none;
+}
+
+footer > section:nth-child(1) >ul + ul > h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(143, 137, 137);
+}
+
+footer > section:nth-child(1) >ul + ul>li{
+    float: left;
+    width: 10%;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+footer > section:nth-child(1) >ul + ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+footer > section:nth-child(1) >ul:nth-child(3){
+    margin-top: 4px;
+}
+
+footer > section:nth-child(1) >ul:nth-child(2){
+    margin-top: 4px;
+}
+
+ul:nth-child(2)>li>a:hover,
+ul:nth-child(3)>li>a:hover{
+    color:black;
+}
+
+footer>section:nth-child(2){
+    float: right;
+    margin-top: -100px;
+    margin-right: 2%;
+    width: 15%;
+}
+
+/* footer>section:nth-child(2)>ul{
+    float: left;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+} */
+
+footer >section:nth-child(2)>ul>address{
+        font-size: 1.5rem;
+}
 /*------------------------ Responsiveness ----------------------------------*/
 
 @media screen and (max-width: 600px){
@@ -257,4 +348,25 @@ footer{
         width: 50%;
         height: 50%;
     }
+}
+
+
+@media screen and (max-width: 1100px){
+    footer>section:nth-child(1)>ul>li{
+        float: left;
+        width: 10%;
+        list-style: none;
+        margin-right: 6px;
+    }
+    footer > section:nth-child(1) >ul + ul>li{
+        margin-right: 6px;
+    }
+    footer>section:nth-child(2){
+        float: right;
+        margin-top: -100px;
+        margin-right: 5%;
+        width: 15%;
+    }
+
+
 }
