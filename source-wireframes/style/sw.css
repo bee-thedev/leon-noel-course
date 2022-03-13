@@ -93,28 +93,6 @@ header >nav > button:hover{
     letter-spacing: 2px;
 }
 
-@media screen and (max-width: 650px){
-    header > nav > p{
-        text-align: center;
-        font-size: 3rem;
-        float: left;
-        width: 100%;
-    }
-
-    header > nav > ul{
-       display: none;
-    }
-
-    header > nav > button{
-       display: none;
-    }
-}
-
-@media screen and (max-width: 1100px){
-    header> nav > ul > li{
-        width: 15%;
-    }
-}
 
 
 /* ---------------------- Header Section ---------------------------------*/
@@ -167,4 +145,54 @@ header > section > p{
     color: grey;
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+/*------------------------- Responsiveness ----------------------------*/
+
+@media screen and (max-width: 740px){
+    header > nav > p{
+        text-align: center;
+        font-size: 3rem;
+        float: left;
+        width: 100%;
+    }
+
+    header > nav > ul{
+       display: none;
+    }
+
+    header > nav > button{
+       display: none;
+    }
+
+    header > section > h1{
+        display: block;
+        width: 90%;
+    }
+
+    header > section{
+        display: block;
+        width: 90%;
+    }
+
+    header > section > form>input{
+       display: block;
+        width: 90%;
+    }
+
+    header > section > form> button{
+        display: block;
+        width: 90%;
+    }
+
+    header > section > p{
+        display: block;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    header> nav > ul > li{
+        width: 15%;
+    }
 }
