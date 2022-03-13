@@ -62,11 +62,17 @@ header>nav>button{
     margin-top: 6px;
 }
 
+header>nav> button:hover{
+    background-color: rgb(79, 76, 76);
+    color: white;
+}
+
 
 header > nav > p{
     font-family: 'Lobster', cursive;
     font-size: 2.5rem;
     float: left;
+    margin-top: 6px;
 }
 
 
@@ -147,9 +153,10 @@ header + section > p{
     width: 150px;
     height: 40px;
     color: black;
-    border-radius: 10px;
     border: none;
     cursor: pointer;
+    background-color: inherit;
+    border: 1px solid grey;
 }
 
 .sub-section> button:hover{
@@ -160,6 +167,7 @@ header + section > p{
 section >section > img{
     height: 200px;
     width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 
@@ -186,6 +194,27 @@ section >section > img{
     word-wrap: normal;
 }
 
+.last-section >button{
+    width: 150px;
+    height: 40px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    background-color: none;
+    border: 1px solid grey;
+}
+
+.last-section> button:hover{
+    background-color: rgb(79, 76, 76);
+    color: white;
+}
+
+
+footer{
+    width: 100%;
+    background-color: rgb(95, 92, 92) ;
+    height: 600px;
+}
 
 /*------------------------ Responsiveness ----------------------------------*/
 
@@ -225,7 +254,7 @@ section >section > img{
     }
 
     .sub-section > img{
-        width:50%;
+        width: 50%;
         height: 50%;
     }
 }
