@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Eczar&family=Merriweather+Sans:wght@600&display=swap');
 
 /* --------------------------- General ---------------------------*/
 
@@ -14,7 +15,7 @@
 html{
     font-size: 62.5%;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 /*----------------------------- Header -----------------------------*/
@@ -38,8 +39,9 @@ header > nav{
 header > nav > p{
     float: left;
     width: 45%;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
+    font-family: 'Concert One', cursive;
     color: #151D3B;
     padding: 10px;
 }
@@ -65,7 +67,10 @@ header > nav > ul > li >a {
     color: #151D3B;
     font-weight: 200;
     float: left;
-    
+}
+
+header > nav > ul > li > a:hover{
+    color: white;
 }
 
 header > nav > button{
@@ -79,4 +84,87 @@ header > nav > button{
     color: white;
     border-radius: 5px;
     border: none;
+}
+
+header >nav > button:hover{
+    color: #151D3B;
+    background-color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 650px){
+    header > nav > p{
+        text-align: center;
+        font-size: 3rem;
+        float: left;
+        width: 100%;
+    }
+
+    header > nav > ul{
+       display: none;
+    }
+
+    header > nav > button{
+       display: none;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    header> nav > ul > li{
+        width: 15%;
+    }
+}
+
+
+/* ---------------------- Header Section ---------------------------------*/
+
+header > section {
+   float: left;
+   width: 40%;
+    padding: 30px;
+    margin-right: 60%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+header > section > h1{
+  font-size: 4rem;
+  color: #151D3B;
+  /* font-family: 'Concert One', cursive; */
+  font-family: 'Eczar', serif;
+  margin-bottom: 10px;
+  line-height: 130%;
+}
+
+
+header > section > form>input{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    background-color: #fafafa;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+header > section > form>input:hover, header > section > form>input:focus{
+    outline: #151D3B;
+}
+
+header > section > form > button{
+    width: 19%;
+    padding: 10px;
+    background-color: #151D3B;
+    border: none;
+    color: white;
+}
+
+
+header > section > p{
+    font-size: 1.5rem;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
