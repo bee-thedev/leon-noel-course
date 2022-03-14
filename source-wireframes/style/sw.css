@@ -311,6 +311,13 @@ header + section > p{
         width: 90%;
         margin-left: 2%;
     }
+
+    header + section > h2 , header + section >p{
+        display: block;
+        width: 86%;
+        margin-right: 2%;
+        word-break: normal;
+    }
 }
 
 @media screen and (max-width: 1100px){
