@@ -183,6 +183,13 @@ header > section > ul > li> span{
 /*--------------------------- Responsiveness ----------------------------------*/
 
 @media screen and (max-width: 1150px){
+
+    header > nav > ul{
+        float: left;
+        width: 90%;
+        margin-left: 10%;
+    }
+
     header > section > form > button{
         margin: 0;
         margin-left: 0;
@@ -192,9 +199,43 @@ header > section > ul > li> span{
     header > section > form > input{
         width: 54%;
     }
+
+    header > section > ul{
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    header > section > ul > li{
+        width: 22%;
+    }  
 }
 
 @media screen and (max-width: 800px){
+
+    nav{
+        background-color: rgb(21, 38, 73,.5);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        min-height: 60px;
+        
+    }
+    header > nav > ul{
+        float: left;
+        width: 90%;
+        margin-left: 10%;
+        margin-bottom: 3%;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    header >nav >ul >li> a{
+        color: white;
+    }
+    
+    header > nav > ul >li{
+        width: 25%;
+        margin-top: 2%;
+    }
+    
     header > section{
        display: block;
        width: 100%;
@@ -203,23 +244,13 @@ header > section > ul > li> span{
 
     header > section > form > input{
         width: 80%;
-        border-radius: 5px;
+        border-radius: 0;
     }
 
     header > section > form > button{
         width: 80%;
-        border-radius: 5px;
+        border-radius: 0;
     }
-
-    header > section > ul{
-        margin-top: 5%;
-        width: 100%;
-    }
-
-    header > section > ul > li{
-        width: 20%;
-    }   
-
 }
 
 @media screen and (max-width: 600px){
@@ -229,17 +260,18 @@ header > section > ul > li> span{
 
     header > section > form > input{
         width: 90%;
-        border-radius: 5px;
+        border-radius: 0;
     }
 
     header > section > form > button{
         width: 90%;
-        border-radius: 5px;
+        border-radius: 0;
+        margin-left: 0;
     }
 
     header > section > ul{
         margin-top: 5%;
-        width: 100%;
+        width: 90%;
     }
 
     header > section > ul > li{
@@ -265,7 +297,7 @@ header + section > article{
     width: 60%;
     text-align: center;
     margin-top: 8%;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
     margin-right: 5%;
     background-color: rgb(21, 38, 73,.5);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -308,3 +340,53 @@ header+ section > article>h1,
     header + section > article > button:hover{
         background-color: #152649;
     }
+
+
+    /*------------------------------- SEction One After Header --Responsiveness ---------------------------------*/
+
+    @media screen and (max-width: 1150px){
+        header + section > article{
+            width: 80%;
+            margin-right: 10%;
+        }
+
+        header + section > article > p,
+        header + section > article > h1,
+        header + section > article > button{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        header + section > article > button{
+            border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    header + section > article{
+        width: 90%;
+        margin-right: 5%;
+        margin-top: 12%;
+        height: 80%;
+    }
+   header + section > article> p{
+       display: none;
+   }
+
+   header + section > article > h1::after{
+         content: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable..... ";
+         display: block;
+         width: 100%;
+         height: 2px;
+         font-size: medium;
+         background-color: #07090e;
+         margin-top: 5%;
+   }
+
+   header + section > article > button{
+       width: 80%;
+       margin-top: 60%;
+   }
+}
