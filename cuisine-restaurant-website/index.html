@@ -17,41 +17,42 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="myHeader">
             <ul>
                 <li>
-                    <a href="github.com/bee-thedev" target="_blank">Home</a>
+                    <a href="#">Home</a>
                 </li>
 
                 <li>
-                    <a href="github.com/bee-thedev" target="_blank">About us</a>
+                    <a href="#aboutus" target="" class=".nav_link">About us</a>
                 </li>
 
                 <li>
-                    <a href="github.com/bee-thedev" target="_blank">Menu</a>
+                    <a href="#menu" target="">Menu</a>
                 </li>
 
-                <li>
+                <!-- <li>
                     <a href="github.com/bee-thedev" target="_blank">Order now</a>
-                </li>
+                </li> -->
 
                 <li>
                     <a href="github.com/bee-thedev" target="_blank">Blog</a>
                 </li>
 
-                <li>
+                <!-- <li>
                     <a href="github.com/bee-thedev" target="_blank">Location</a>
-                </li>
+                </li> -->
 
-                <li>
+                <!-- <li>
                     <a href="github.com/bee-thedev" target="_blank">
                         <i class="fas fa-cart-arrow-down"></i>
                     </a>
-                </li>
+                </li> -->
 
                 <li>
-                    <a href="github.com/bee-thedev" target="_blank">
-                        <i class="fas fa-search"></i>
+                    <a href="#section3">
+                        <i class="fas fa-phone-square"></i>
+                        Call us
                     </a>
                 </li>
             </ul>
@@ -61,9 +62,9 @@
             <h1>
                 Welcome <br>to Our Cuisine Restaurant
             </h1>
-            <form>
-                <input type="text" placeholder="Search for your food" />
-                <button type="submit"> Location
+            <form action="/search.html" method="get" target="_blank">
+                <input type="text" placeholder="Search for your food" id="searchfood"/>
+                <button type="submit" id="btn_search"> Search
                     <i class="fas fa-caret-down" id="icon"></i>
                 </button>
             </form>
@@ -84,19 +85,19 @@
         </section>
     </header>
 
-    <section>
+    <section id="aboutus">
         <article>
         <p>About us</p>
         <h1>Discover Our Restaurant Story</h1>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
             The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        <button>Discover
+        <button id="aboutus_discover">Discover
             <i class="fas fa-caret-right"></i>
         </button>
         </article>
     </section>
 
-    <section>
+    <section id="menu">
             <p>Order Online Now</p>
             <h1>Our Gourmet Meals</h1>
             <ul>
@@ -111,49 +112,49 @@
                 <ul>
                      <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
-                            <img src="/cuisine-restaurant-website/assets/mediterranean-cuisine-2378758_1920.jpg" alt="food" />
+                            <img src="assets/mediterranean-cuisine-2378758_1920.jpg" alt="food" />
                         </a>
                     </li>
 
                     <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
-                            <img src="/cuisine-restaurant-website/assets/soup-1429793_1920.jpg" alt="food" />
+                            <img src="assets/soup-1429793_1920.jpg" alt="food" />
                         </a>
                     </li>
 
                     <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
-                            <img src="/cuisine-restaurant-website/assets/breakfast-2151201_1920.jpg" alt="food" />
+                            <img src="assets/breakfast-2151201_1920.jpg" alt="food" />
                         </a>
                     </li>
 
                     <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
-                            <img src="/cuisine-restaurant-website/assets/pexels-ella-olsson-1640773.jpg" alt="food" />
+                            <img src="assets/pexels-ella-olsson-1640773.jpg" alt="food" />
                         </a>
                     </li>
 
                     <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
-                            <img src="/cuisine-restaurant-website/assets//pexels-pixabay-461428.jpg" alt="food" />
+                            <img src="/assets/breakfast-2151201_1920.jpg" alt="food" />
                         </a>
                     </li>
 
                     <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
-                            <img src="/cuisine-restaurant-website/assets/spaghetti-1932466_1920.jpg" alt="food" />
+                            <img src="assets/spaghetti-1932466_1920.jpg" alt="food" />
                         </a>
                     </li>
 
                     <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
-                            <img src="/cuisine-restaurant-website/assets/salad-2068220_1920.jpg" alt="food" />
+                            <img src="assets/salad-2068220_1920.jpg" alt="food" />
                         </a>
                     </li>
 
                     <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
-                            <img src="/cuisine-restaurant-website/assets/cakes-2459954_1920.jpg" alt="food" />
+                            <img src="assets/cakes-2459954_1920.jpg" alt="food" />
                         </a>
                     </li>
                 </ul>
@@ -176,5 +177,9 @@
 
         </span>
     </section>
+
+    <!--------------------- Functionality  -------------------->
+
+    <script src="/js/restaurant.js"></script>
 </body>
 </html>

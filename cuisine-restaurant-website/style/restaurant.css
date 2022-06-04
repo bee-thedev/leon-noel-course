@@ -7,6 +7,10 @@
 
 
 /* --------------------------- General ---------------------------*/
+html {
+    scroll-behavior: smooth;
+  }
+
 
 *{
     box-sizing: border-box;
@@ -24,7 +28,7 @@ html{
 /*----------------------------- Header -----------------------------*/
 
 header{
-    background: url("/cuisine-restaurant-website/assets/pexels-polina-tankilevitch-4518701.jpg") no-repeat center center fixed; 
+    background: url("/assets/pexels-polina-tankilevitch-4518701.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,16 +48,16 @@ header > nav{
 
 header > nav > ul{
     float: right;
-    width: 60%;
+    width: 50%;
     margin-top: 2%;
 }
 
 header > nav > ul > li{
     float: left;
-    width: 12%;
+    width: 20%;
     list-style: none;
     /* padding: 10px; */
-    font-size: 1.5em;
+    font-size: 2em;
     list-style: none;
 }
 
@@ -62,6 +66,10 @@ header> nav>ul>li> a{
     color: rgb(34, 25, 68);
 }
 
+header > nav > ul> li>a:hover{
+    color: orange;
+    text-decoration: underline;
+}
 header > nav > ul > li > a >i{
     font-size: 1.5em;
 }
@@ -70,6 +78,7 @@ header > nav > ul > li > a >i{
 header > nav > ul > li > a >i:hover,
 header > nav > ul > li > a >i:focus{
     color: orange;
+    cursor: pointer;
 }
 
 /*---------------------------- Header Section ----------------------------*/
@@ -166,13 +175,16 @@ header > section > ul > li >i {
 }
 
 .fa-facebook-f:hover{
-    color: #3b5998;
+    color: #033ab1;
+    cursor: pointer;
 }
  .fa-twitter:hover{
     color: #00aced;
+    cursor: pointer;
  }
  .fa-instagram:hover{
-    color: #e1306c;
+    color: #810e34;
+    cursor: pointer;
  }
 
 header > section > ul > li> span{
@@ -181,6 +193,18 @@ header > section > ul > li> span{
     color: white;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: orange;
+    padding-bottom: 10px;
+    z-index: 1;
+  }
+  
+  /* .sticky + .content {
+    padding-top: 102px;
+  } */
 /*--------------------------- Responsiveness ----------------------------------*/
 
 @media screen and (max-width: 1150px){
@@ -301,7 +325,7 @@ header > section > ul > li> span{
 /*--------------------------- SEction One after Header ---------------------------------*/  
 
 header + section {
-    background: url("/cuisine-restaurant-website/assets/pexels-cottonbro-3297366.jpg") no-repeat center center fixed;
+    background: url("/assets/pexels-cottonbro-3297366.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -353,6 +377,7 @@ header+ section > article>h1,
         color: #f9fafc;
         background-color: rgb(232, 110, 10);
         margin-bottom: 5%;
+        cursor: pointer;
     }
 
     header + section > article > button:hover{
