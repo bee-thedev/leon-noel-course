@@ -12,7 +12,12 @@
     crossorigin="anonymous" />
 
     <!-- styles -->
+    <script src="/js/jquery.min.js" ></script>
     <link rel="stylesheet" href="./style/restaurant.css" />
+
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
   </head>
 
 <body>
@@ -36,7 +41,7 @@
                 </li> -->
 
                 <li>
-                    <a href="github.com/bee-thedev" target="_blank">Blog</a>
+                    <a href="#blog" target="">Blog</a>
                 </li>
 
                 <!-- <li>
@@ -101,14 +106,14 @@
             <p>Order Online Now</p>
             <h1>Our Gourmet Meals</h1>
             <ul>
-                <li><a href="http://www.github.com/bee-thedev" target="_blank">Breakfast</a></li>
-                <li><a href="http://www.github.com/bee-thedev" target="_blank">Lunch</a></li>
-                <li><a href="http://www.github.com/bee-thedev" target="_blank">Dinner</a></li>
-                <li><a href="http://www.github.com/bee-thedev" target="_blank">Dessert</a></li>
-                <li><a href="http://www.github.com/bee-thedev" target="_blank">Shake</a></li>
+                <li><a href="#" target="">Breakfast</a></li>
+                <li><a href="#" target="">Lunch</a></li>
+                <li><a href="#" target="">Dinner</a></li>
+                <li><a href="#" target="">Dessert</a></li>
+                <li><a href="#" target="">Shake</a></li>
             </ul>
 
-            <section>
+            <!-- <section>
                 <ul>
                      <li>
                         <a href="http://www.github.com/bee-thedev" target="_blank">
@@ -158,30 +163,245 @@
                         </a>
                     </li>
                 </ul>
-            </section>
+            </section> -->
+
+            <div class="container">
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="https://source.unsplash.com/75S9fpDJVdo/300x510" alt="Picture by Kyle Cottrell" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">NASA Has Found Hundreds Of Potential New Planets</h2>
+                            <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope, 10 of which are similar to Earth’s size and may be habitable by other life forms.</p>
+                            <a href="" class="card__button">Read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="https://source.unsplash.com/71u2fOofI-U/300x510" alt="Picture by Nathan Dumlao" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">This Is Your Body And Brain On Coffee</h2>
+                            <p class="card__snippet">Drinking more caffeine during the coronavirus lockdown? Here's how it can affect you over time and advice on making it better for you.</p>
+                            <a href="" class="card__button">Read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="https://source.unsplash.com/qXMpNtNp1uE/300x510" alt="Picture by Daniel Lincoln" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">Why You Should Bring Your Dog To Work</h2>
+                            <p class="card__snippet">On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
+                            <a href="" class="card__button">Read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="https://source.unsplash.com/qXMpNtNp1uE/300x510" alt="Picture by Daniel Lincoln" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">Why You Should Bring Your Dog To Work</h2>
+                            <p class="card__snippet">On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
+                            <a href="" class="card__button">Read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="https://source.unsplash.com/qXMpNtNp1uE/300x510" alt="Picture by Daniel Lincoln" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">Why You Should Bring Your Dog To Work</h2>
+                            <p class="card__snippet">On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
+                            <a href="" class="card__button">Read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="https://source.unsplash.com/qXMpNtNp1uE/300x510" alt="Picture by Daniel Lincoln" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">Why You Should Bring Your Dog To Work</h2>
+                            <p class="card__snippet">On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
+                            <a href="" class="card__button">Read more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
     </section>
     
-    
+    <!------------------ Testimonials ------------------->
+  
+    <div id="container">
+        <div id="toggleContainer">
+           <label>Carousel</label>
+           <div id="toggle">
+             <div id="outer3">
+                <div id="slider3"></div>
+             </div>
+             <label>Tiles</label>
+          </div>
+        </div>
+        <div id="galleryView">
+          <div id="galleryContainer">
+             <div id="leftView"></div>
+             <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+             <a id="linkTag">
+                <div id="mainView"></div>
+             </a>
+             <div id="rightView"></div>
+             <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+          </div>
+        </div>
+        <div id="tilesView">
+          <div id="tilesContainer"></div>
+        </div>
+      </div>   
+      
+    <!--------------------End of testimonial ------------------->
 
     <section id="section3">
         <h1>Opening Hours</h1>
-        <i class="fas fa-phone-square-alt"></i>
-        <p>Call Now</p>
-        <h3>+92123 4567 89</h3>
-        <span>
-            Monday to Tuesday
-            9am to 22pm
-        </span>
-        <span>
-            Wednesday to Saturday
-            9am to 23pm 
-        <span>
-
-        </span>
+        <div>
+        <p>
+            <i class="fas fa-clock"></i>
+            All thru the Week: 7:00 - 22:00
+        </p>
+        <p>
+            <i class="fas fa-phone-square-alt"></i>
+            <a href="tel:5554280940">+92123 4567 89</a>
+        </p>
+        </div>
     </section>
 
-    <!--------------------- Functionality  -------------------->
 
+    <!------------------------ Footer -------------------------->
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------------End of Footer  ------------------>
+    
+    <!--------------------- Functionality  -------------------->
+    <script src="/js/angular.min.js" ></script>
+    <script src="/js/slick.min.js" ></script>
+    <script src="/js/owl.carousel.min.js" ></script>
     <script src="/js/restaurant.js"></script>
+    
 </body>
 </html>
