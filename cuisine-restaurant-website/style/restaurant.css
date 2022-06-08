@@ -57,7 +57,7 @@ header > nav > ul > li{
     width: 20%;
     list-style: none;
     /* padding: 10px; */
-    font-size: 2em;
+    font-size: 1.5em;
     list-style: none;
 }
 
@@ -471,6 +471,9 @@ section + section >{
     height: 100vh;
 }
 
+#menu{
+    background-color: #eaebed;
+}
 /* section + section img{
     height: 30%;
     width: 25%;
@@ -504,11 +507,12 @@ section + section > ul > li{
     width: 20%;
     text-align: center;
     list-style: none;
-    border-bottom: 1px solid #f3ede9;
+    border-bottom: 1px solid #fffefd;
+    margin-bottom: 2%;
 }
 
 section + section > ul > li >a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -902,28 +906,27 @@ section#section3{
 }
 
 #section3 h1{
-    font-size: 6rem;
+    font-size: 4.5rem;
     margin-top: 4%;
-    letter-spacing: 4px;
+    letter-spacing: 8px;
 }
 
-#section3 div{
-    margin-top: 8%;
-    margin-bottom: 5%;
+#callus{
+    margin-top: 12%;
     font-size: large;
 }
 
 .fa-phone-alt{
-    font-size: 4rem;
+    font-size: 2rem;
     color: orange;
     background-color: #eaebed;
     border: 1px solid orange;
-    padding: 20px;
+    padding: 15px;
     border-radius: 50%;
 }
 
 #section3 div>p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: thin;
 }
 
@@ -931,15 +934,32 @@ section#section3{
 #section3 div>p>a{
     color: orange;
     text-decoration: none;
-    font-size: 3rem;
-    letter-spacing: 4px;
+    font-size: 2rem;
+    letter-spacing: 6px;
 }
 
-#section3 div>p>a:hover{
-    color: black;
-    text-decoration: none;
-    transition: all 1s;
+#timing{
+    float: left;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
+
+.timing{
+    float: left;
+    width: 50%;
+}
+
+
+.timing>p+p{
+    font-size:1.7rem;
+    font-weight: 600;
+}
+
+.timing>p{
+    font-size: 1.2rem;
+}
+
+
 /*------------------------- End of Section 3 Contact ----------------------------*/
 
 /*------------------------- Responsiveness - Contact us ----------------------------*/
@@ -955,6 +975,7 @@ section#section3{
     width: 100%;
     margin-top: 5%;
     clear: none;
+    background-color: #eaebed;
   }
   
   .card {
@@ -983,7 +1004,7 @@ section#section3{
   }
   @media (min-width: 1024px) {
     .card__thumb {
-      max-height: 500px;
+      max-height: 400px;
     }
   }
   .card__thumb::after {
@@ -1205,7 +1226,7 @@ div>li> i {
   bottom: 20px;
   right: 20px;
   display: none;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
   background-color: orange;
   color: white;
