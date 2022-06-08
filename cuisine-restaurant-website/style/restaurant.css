@@ -891,7 +891,7 @@ section + section > section > ul > li > a> img{
 
 /*------------------------- End of Testimonial ----------------------------*/
 
-/*---------------------------- Section 3 Aside ---------------------------------*/
+/*---------------------------- Section 3 Contact---------------------------------*/
 
 section#section3{
     background-color: #eaebed;
@@ -902,39 +902,51 @@ section#section3{
 }
 
 #section3 h1{
-    font-size: 5rem;
+    font-size: 6rem;
     margin-top: 4%;
+    letter-spacing: 4px;
 }
 
-#section3 p{
-    font-size: 1.5rem;
-    margin-top: 2%;
-}
-#section3 i{
-    font-size: 4rem;
-    margin-top: 2%;
-    color: orange;
-}
-
-#section3 div>p{
-    float: left;
-    width: 50%;
-    margin-top: 2%;
-}
-
-#section3 div>p>i:hover{
-    color: black;
-}
-
-#section3 a{
+#section3 div{
+    margin-top: 8%;
+    margin-bottom: 5%;
     font-size: large;
 }
 
-#section3 a:hover{
-    font-size: 30px;
+.fa-phone-alt{
+    font-size: 4rem;
+    color: orange;
+    background-color: #eaebed;
+    border: 1px solid orange;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#section3 div>p{
+    font-size: 2rem;
+    font-weight: thin;
 }
 
 
+#section3 div>p>a{
+    color: orange;
+    text-decoration: none;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+#section3 div>p>a:hover{
+    color: black;
+    text-decoration: none;
+    transition: all 1s;
+}
+/*------------------------- End of Section 3 Contact ----------------------------*/
+
+/*------------------------- Responsiveness - Contact us ----------------------------*/
+
+
+/*------------------------- End of Responsiveness - Contact us ----------------------*/
+/*--------------------------Meal Section  ------------------------------------*/
   
   .container {
     display: flex;
@@ -1054,11 +1066,11 @@ section#section3{
     background-color: #152649;
   }
   
-    @media (min-width: 1024px) {
+    /* @media (min-width: 1024px) {
         .card {
         width: 400px;
         }
-    }
+    } */
 
     /*-----------------------------Footer--------------------------------*/
     
@@ -1107,30 +1119,30 @@ section#section3{
 	border: 0px;
 }
 
-.quick-links ul {
+div>ul {
 	list-style: none;
 	color: #fff;
 	font-size: 15px;
 	letter-spacing: 0.5px;	
  }
 
-ul a {
+div>ul>a {
 	text-decoration: none;
 	outline: none;
 	color: #fff;
 	transition: 0.3s;
 }
 
-ul a:hover {
+div>ul>a:hover {
 	color: #ff9800;
 }
 
-ul li {
+div>ul>li {
 	margin: 10px 0;
 	height: 25px;
 }
 
-li i {
+div>li> i {
 	margin-right: 20px;
 }
 
@@ -1185,3 +1197,39 @@ li i {
 /* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
 
 /* Thanks to Computer Conversations */
+
+/*----------------------------Back on Top button ---------------------------*/
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  border: none;
+  z-index: 9999;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#btn-back-to-top:hover {
+  background-color: #07090e;
+  transition: 0.3s;
+}
+
+#btn-back-to-top:active {
+  background-color: #07090e;
+}
+
+#btn-back-to-top:focus {
+  outline: none;
+}
+
+#btn-back-to-top i{
+  font-size: 20px;
+}
+
+/*----------------------------End of Back on Top button ---------------------------*/
