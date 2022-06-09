@@ -974,7 +974,6 @@ section#section3{
     justify-content: center;
     width: 100%;
     margin-top: 5%;
-    clear: none;
     background-color: #eaebed;
   }
   
@@ -1254,3 +1253,84 @@ div>li> i {
 }
 
 /*----------------------------End of Back on Top button ---------------------------*/
+
+/*------------------ Testimonial Slider -------------------*/
+
+.testimonial-container {
+  background-color: orange;
+  color: #fff;
+  margin: 60px auto;
+  padding: 40px 50px;
+  max-width: 800px;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+}
+
+.fa-quote-right {
+  left: 40px;
+}
+
+.fa-quote-left {
+  right: 40px;
+}
+
+.testimonial {
+  line-height: 22px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
+  }
+}
