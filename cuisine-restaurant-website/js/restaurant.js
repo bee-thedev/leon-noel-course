@@ -268,14 +268,14 @@ function backToTop() {
 
 // ------------------------ Mixitup   --------------------------
 
-$(document).ready(function () {
-  // Instantiate MixItUp:
-  $('.container').mixItUp({
-      selectors: {
-          target: '.card'
-      }
-  });
-});
+// $(document).ready(function () {
+//   // Instantiate MixItUp:
+//   $('.container').mixItUp({
+//       selectors: {
+//           target: '.card'
+//       }
+//   });
+// });
 
 //--------------------Testimonial --------------
 
@@ -350,3 +350,7 @@ function updateTestimonial() {
 }
 
 setInterval(updateTestimonial, 9200)
+
+
+// ------------------- Sorting Portfolio Items -------------
+
